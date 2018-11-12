@@ -5,19 +5,18 @@
 div {
     width: 100px;
     height: 50px;
-    background-color: red;
     font-weight: bold;
     position: relative;
-    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
-    animation: mymove 5s infinite;
+    /* -webkit-animation: mymove 5s infinite; Safari 4.0 - 8.0 */
+    animation: mymove 10s infinite;
 }
 
-/* Safari 4.0 - 8.0 */
+/* Safari 4.0 - 8.0
 #div1 {-webkit-animation-timing-function: linear;}
 #div2 {-webkit-animation-timing-function: ease;}
 #div3 {-webkit-animation-timing-function: ease-in;}
 #div4 {-webkit-animation-timing-function: ease-out;}
-#div5 {-webkit-animation-timing-function: ease-in-out;}
+#div5 {-webkit-animation-timing-function: ease-in-out;} */
 
 /* Standard syntax */
 #div1 {animation-timing-function: linear;}
@@ -29,25 +28,33 @@ div {
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes mymove {
     from {left: 0px;}
-    to {left: 300px;}
+    to {left: 1000px;}
 }
 
 /* Standard syntax */
 @keyframes mymove {
     from {left: 0px;}
-    to {left: 300px;}
+    to {left: 1000px;}
 }
 </style>
 </head>
 <body>
 
-<p><strong>Note:</strong> The animation-timing-funtion property is not supported in Internet Explorer 9 and earlier versions.</p>
-
-<div id="div1">linear</div>
-<div id="div2">ease</div>
-<div id="div3">ease-in</div>
-<div id="div4">ease-out</div>
-<div id="div5">ease-in-out</div>
+<div id="div1"><p>linear</p>
+        <img  style="height:70px; width:70px" src="jerry.png">
+      </div>
+<div id="div2"><p>ease</p>
+         <img  style="height:70px; width:70px" src="tom.png">
+</div>
+<div id="div3"><p>ease-in</p>
+        <img  style="height:70px; width:70px" src="jerry.png">
+      </div>
+<div id="div4"><p>ease-out</p>
+         <img  style="height:70px; width:70px" src="tom.png">
+</div>
+<div id="div5"><p>ease-in-out</p>
+        <img  style="height:70px; width:70px" src="tom.png">
+</div>
 
 </body>
 </html>
