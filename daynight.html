@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>6-08 Images and Animation</title>
+    <link href="daynight.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#switch").click(function () {
+                if ($("#fullpage").hasClass("night")) {
+                    $("#fullpage").removeClass("night");
+                    $("#switch").removeClass("switched");
+                }
+                else {
+                    $("#fullpage").addClass("night");
+                    $("#switch").addClass("switched");
+
+                }
+            });
+        });
+    </script>
+
+</head>>
+
+<body>
+    <div id="fullpage">
+        <div class="section">
+            <p id="info"></p>
+            <div class="time-circle">
+                <div class="sun"></div>
+                <div class="moon">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                  </div>
+                  <div class="stars">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                  </div>
+                <div class="water"></div>
+            </div>
+            <div id="intro-text">
+                <h1 href="#">day night Animation</h1>
+            </div>
+            <div id="switch">
+                <div id="circle"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

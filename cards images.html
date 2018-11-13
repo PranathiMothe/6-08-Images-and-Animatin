@@ -5,7 +5,6 @@
 body {margin:15px;}
 
 div.polaroid {
-  width: 50%;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 10px;
@@ -14,6 +13,10 @@ div.polaroid {
 }
 
 div.container {
+  display: grid;
+  grid-template-columns: 250px 250px;
+  grid-template-rows: 50% 50%;
+  grid-column-gap: 10px;
   text-align: center;
   padding: 5px 5px;
   
@@ -24,8 +27,9 @@ div.container {
 
 <h2>Responsive Polaroid Images / Cards</h2>
 
+<div class="container">
 <div class="polaroid">
-  <img src="images.jpg" alt="Bearcat" style="width:100%">
+  <img src="images.jpg" alt="Bearcat" style="width:250px; height: 255px">
   <div class="container">
     <p>Bearcat</p>
   </div>
@@ -36,6 +40,21 @@ div.container {
   <div class="container">
     <p>Pranathi Mothe</p>
   </div>
+</div>
+
+<div class="polaroid">
+  <img src="images.jpg" alt="Bearcat" style="width:250px; height: 255px">
+  <div class="container">
+    <p>Bearcat</p>
+  </div>
+</div>
+
+<div class="polaroid">
+  <img src="IMG_20180821_175802.jpg" alt="Pranathi Mothe" style="width:100%">
+  <div class="container">
+    <p>Pranathi Mothe</p>
+  </div>
+</div>
 </div>
 
 </body>
