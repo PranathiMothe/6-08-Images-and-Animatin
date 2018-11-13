@@ -1,0 +1,17 @@
+#panel, #flip {
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+    background-color:rgb(140, 48, 100);
+    color:aliceblue;
+    border: solid 1px rgb(177, 171, 171);
+    border-radius: 3px;
+}
+
+#panel {
+    background-color:rgb(244, 221, 234);
+    color:black;
+    padding: 200px;
+    display: none; 
+ 
+}

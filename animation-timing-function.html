@@ -3,31 +3,42 @@
 <head>
 <style> 
 div {
-    width: 100px;
-    height: 50px;
+    width: 150px;
+    height: 80px;
     font-weight: bold;
     position: relative;
-    /* -webkit-animation: mymove 5s infinite; Safari 4.0 - 8.0 */
-    animation: mymove 10s infinite;
+    animation: mymove 20s infinite;
 }
 
-/* Standard syntax */
-#div1 {animation-timing-function: linear; }
-#div2 {animation-timing-function: ease;}
-#div3 {animation-timing-function: ease-in;}
-#div4 {animation-timing-function: ease-out;}
-#div5 {animation-timing-function: ease-in-out;}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes mymove {
-    from {left: 0px;}
-    to {left: 1000px;}
+#div1 {
+    animation-timing-function: linear;
+    background-color: blue;
 }
+#div2 {
+    animation-timing-function: ease;
+    background-color:red;
+}
+#div3 {
+    animation-timing-function: ease-in;
+    background-color:yellowgreen;
+}
+#div4 {
+    animation-timing-function: ease-out;
+    background-color:palevioletred;
+}
+#div5 {
+    animation-timing-function: ease-in-out;
+    background-color: brown;
+}
+#div6{
+    animation-timing-function: steps(5, end);
+    background-color:orchid;
+    }
 
-/* Standard syntax */
+
 @keyframes mymove {
     from {left: 0px;}
-    to {left: 1000px;}
+    to {left: 1300px;}
 }
 </style>
 </head>
@@ -48,6 +59,9 @@ div {
 </div>
 <div id="div5"><p>ease-in-out</p>
         <img  style="height:70px; width:70px" src="tom.png">
+</div>
+<div id="div6"><p>In steps</p>
+    <img  style="height:70px; width:70px" src="jerry.png">
 </div>
 
 </body>
