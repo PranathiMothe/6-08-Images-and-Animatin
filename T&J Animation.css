@@ -8,7 +8,7 @@ animation-duration: 5s;
 animation-fill-mode: backwards;
 /* animation-fill-mode: forwards; */
 animation-play-state: running;
-animation-iteration-count: infinite;
+animation-iteration-count: 1;
 animation-delay: 1.5s;
 
 }
@@ -22,7 +22,7 @@ animation-name: drive1;
 animation-duration: 5s; 
 /* animation-fill-mode: forwards; */
 animation-fill-mode: backwards;
-animation-iteration-count: infinite;
+animation-iteration-count: 1;
 animation-play-state: running;
 animation-delay: 1s;
 }
