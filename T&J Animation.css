@@ -5,10 +5,10 @@ top: 300px;
 left: 0px;	
 animation-name: drive;
 animation-duration: 5s; 
-animation-fill-mode: backwards;
-/* animation-fill-mode: forwards; */
+/* animation-fill-mode: backwards; */
+animation-fill-mode: forwards;
 animation-play-state: running;
-animation-iteration-count: 1;
+animation-iteration-count: infinite;
 animation-delay: 1.5s;
 
 }
@@ -20,37 +20,37 @@ top: 300px;
 left: 0px;	
 animation-name: drive1;
 animation-duration: 5s; 
-/* animation-fill-mode: forwards; */
-animation-fill-mode: backwards;
-animation-iteration-count: 1;
-animation-play-state: running;
+animation-fill-mode: forwards;
+/* animation-fill-mode: backwards; */
+animation-iteration-count: infinite;
+animation-play-state: paused;
 animation-delay: 1s;
+}
+
+@keyframes drive
+{	
+from{ transform: translateX(0px)}
+to{ transform: translateX(1100px) }
 }
 
 /* @keyframes drive
 {	
-from{ transform: translateX(0px)}
-to{ transform: translateX(1100px) }
-} */
-
-@keyframes drive
-{	
 from{ transform: translateX(1100px)}
 to{ transform: translateX(0px) }
-}  
+}   */
 
 
 
- /* @keyframes drive1
+ @keyframes drive1
 {	
 from{ transform: translateX(0px)}
 to{ transform: translateX(1200px) }
-}  */
-@keyframes drive1
+} 
+/* @keyframes drive1
 {	
 from{ transform: translateX(1200px)}
 to{ transform: translateX(0px) }
-}
+} */
 
 
 body {
