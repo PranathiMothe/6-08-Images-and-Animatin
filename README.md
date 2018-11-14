@@ -1,4 +1,4 @@
-# 6-8 Images-and-Animation
+# 6-08 Images-and-Animation
 Tutorial Team:
 
 1. Pranathi Mothe
