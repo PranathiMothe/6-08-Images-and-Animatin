@@ -16,7 +16,7 @@ Tutorial Team:
 #GitHub repo link
 
 https://github.com/PranathiMothe/6-08-Images-and-Animation
-
+ 
 #How to run the project
 Step 1: Open the repolink
 Step 2: Fork to your Repository and clone it down to your machine
